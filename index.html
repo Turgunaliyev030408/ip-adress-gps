@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a6c7fb20-038a-4504-a7ab-25e395ce2cc1 API key&lang=en_US" type="text/javascript">
+    </script>
+    <title>API || Gps</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header_h1">IP Address Tracker</h1>
+        <div class="click">
+          <input
+            class="header_inp"
+            type="text"
+            placeholder="Search for any IP address or domain"
+          />
+          <button class="header_buton">
+            <img src="./img/Path.png" alt="" />
+          </button>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main class="main">
+        <div class="center">
+        <div class="main_p">
+          <p>IP Address</p>
+          <p>Location</p>
+          <p>Timezone</p>
+          <p>ISP</p>
+        </div>
+
+        <div class="main_h2">
+          <p>192.212.174.101</p>
+          <div class="hr"></div>
+          <p>Brooklyn, NY 10001</p>
+          <div class="hr"></div>
+          <p>UTC -05:00</p>
+          <div class="hr"></div>
+          <p>SpaceXStarlink</p>
+        </div>
+        </div>
+      </main>
+
+      <!-- map -->
+      <div id="map" style="width: full; height: 400px;"></div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
